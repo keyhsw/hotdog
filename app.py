@@ -5,6 +5,7 @@ pipeline = pipeline(task="image-classification", model="julien-c/hotdog-not-hotd
 
 def predict(image):
     predictions = pipeline(image)
+    
     return {p["label"]: p["score"] for p in predictions}
 
 gr.Interface(
