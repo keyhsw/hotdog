@@ -8,6 +8,7 @@
   [![Open in OpenXLab](https://user-images.githubusercontent.com/30455795/236196129-bbfc0037-495f-4d2e-8595-b5969a9dd10e.svg)](https://beta.openxlab.org.cn/apps/detail/houshaowei/hotdog)
   
   
+[![OpenXLab ](https://user-images.githubusercontent.com/30455795/236196986-57523e6c-4b18-41a4-98e5-35b7b28c4649.svg)](https://beta.openxlab.org.cn/apps/detail/houshaowei/hotdog)
 
   
 
