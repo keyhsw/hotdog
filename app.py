@@ -15,7 +15,7 @@ article = """<div style='display:flex; gap: 0.25rem; '><a href='https://minigpt-
 
 with gr.Blocks() as demo:
     gr.Markdown(title)
-    gr.Markdown(SHARED_UI_WARNING)
+#     gr.Markdown(SHARED_UI_WARNING)
     gr.Markdown(description)
     gr.Markdown(article)
 
