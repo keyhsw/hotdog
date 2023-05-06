@@ -19,7 +19,7 @@ article = """<div style='display:flex; gap: 0.25rem; '><a href='https://minigpt-
 #     gr.Markdown(description)
 #     gr.Markdown(article)
 
-demo.Interface(
+gr.Interface(
     predict,
     inputs=gr.inputs.Image(label="Upload hot dog candidate", type="filepath"),
     outputs=gr.outputs.Label(num_top_classes=2),
