@@ -10,8 +10,7 @@ download(model_repo='thomas-yanxin/MindChat-InternLM-7B',
              'tokenization_internlm.py', 'config.json',
              'special_tokens_map.json', 'pytorch_model.bin.index.json',
              'modeling_internlm.py', 'generation_config.json',
-             'configuration_internlm.py','tokenizer.model'
-         ])
+             'configuration_internlm.py','tokenizer.model'])
 
 pipeline = pipeline(task="image-classification", model="julien-c/hotdog-not-hotdog")
 def predict(image):
