@@ -3,8 +3,15 @@ import os
 from transformers import pipeline
 
 from openxlab.model import download
-download(model_repo='thomas-yanxin/MindChat-InternLM-7B', 
-model_name='config.json')
+download(model_repo='thomas-yanxin/MindChat-InternLM-7B',
+         model_name=[
+             'pytorch_model-00001-of-00002.bin',
+             'pytorch_model-00002-of-00002.bin', 'tokenizer_config.json',
+             'tokenization_internlm.py', 'config.json',
+             'special_tokens_map.json', 'pytorch_model.bin.index.json',
+             'modeling_internlm.py', 'generation_config.json',
+             'configuration_internlm.py','tokenizer.model'
+         ], output='/home/xlab-app-center/.cache/model')
 
 pipeline = pipeline(task="image-classification", model="julien-c/hotdog-not-hotdog")
 def predict(image):
