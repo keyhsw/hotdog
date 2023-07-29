@@ -2,6 +2,10 @@ import gradio as gr
 import os
 from transformers import pipeline
 
+from openxlab.model import download
+download(model_repo='thomas-yanxin/MindChat-InternLM-7B', 
+model_name='config.json')
+
 pipeline = pipeline(task="image-classification", model="julien-c/hotdog-not-hotdog")
 def predict(image):
     predictions = pipeline(image)
