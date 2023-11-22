@@ -14,6 +14,8 @@ def predict(image):
     predictions = pipeline(image)
     return {p["label"]: p["score"] for p in predictions}
 
+1/0
+
 gr.Interface(
     predict,
     inputs=gr.inputs.Image(label="Upload hot dog candidate", type="filepath"),
